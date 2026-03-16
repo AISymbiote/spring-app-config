@@ -7,4 +7,5 @@ dns:
   fake-ip-filter:
     - 'www.cloudapi.top'
     - '+.cloudapi.top'
+    - 'checkip.amazonaws.com'
 
