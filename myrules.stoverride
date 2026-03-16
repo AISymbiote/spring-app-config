@@ -3,4 +3,15 @@ rules:
     - DOMAIN,www.cloudapi.top,DIRECT
     - IP-CIDR,52.26.251.56/22,DIRECT
     - DOMAIN,checkip.amazonaws.com,DIRECT
+dns:
+  default-nameserver:
+    - system
+  nameserver:
+    - system
+  nameserver-policy:
+    'www.cloudapi.top': system
+    '+.cloudapi.top': system
+  fake-ip-filter:
+    - 'www.cloudapi.top'
+    - '+.cloudapi.top'
 
